@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="lovecell" id="gTV-IL-0wX" customClass="PicterCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="164"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="280208.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ExL-wc-XSP">
+                        <rect key="frame" x="5" y="8" width="143" height="82"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaF-sF-W3L">
+                        <rect key="frame" x="8" y="95" width="137" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="08f-gE-4vc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ExL-wc-XSP" secondAttribute="trailing" constant="5" id="4fn-MO-5JV"/>
+                <constraint firstItem="LaF-sF-W3L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="L9x-zf-zEF"/>
+                <constraint firstItem="ExL-wc-XSP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="f5s-xv-gav"/>
+                <constraint firstItem="ExL-wc-XSP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="pGM-L1-Oh1"/>
+                <constraint firstItem="LaF-sF-W3L" firstAttribute="top" secondItem="ExL-wc-XSP" secondAttribute="bottom" constant="5" id="qXO-tn-wdC"/>
+                <constraint firstAttribute="bottom" secondItem="LaF-sF-W3L" secondAttribute="bottom" constant="8" id="vEi-fs-tEr"/>
+                <constraint firstAttribute="trailing" secondItem="LaF-sF-W3L" secondAttribute="trailing" constant="8" id="vyd-cf-dIP"/>
+            </constraints>
+            <size key="customSize" width="153" height="164"/>
+            <connections>
+                <outlet property="contentLable" destination="LaF-sF-W3L" id="tXB-Wv-Fwe"/>
+                <outlet property="imageView" destination="ExL-wc-XSP" id="r4x-iu-5JP"/>
+            </connections>
+            <point key="canvasLocation" x="189.5" y="186"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="280208.jpg" width="640" height="1136"/>
+    </resources>
+</document>

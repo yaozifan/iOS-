@@ -1,0 +1,28 @@
+//
+//  WeiHeader.pch
+//  微内涵
+//
+//  Created by mac on 15/10/20.
+//  Copyright (c) 2015年 huiwen. All rights reserved.
+//
+
+#ifndef ____WeiHeader_pch
+#define ____WeiHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "BaseModel.h"
+#define KSCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define KSCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
+#import "UIView+Extension.h"
+#import "AFNateWorking.h"
+#define QUTU_URL @"http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_pics&page=%d&page_size=15&max_timestamp=%d&vip=1&platform=0&appver=0&udid=0"
+#define NEIHAN_URL @"http://223.6.252.214/weibofun/weibo_list.php?apiver=10500&category=weibo_jokes&page=%d&page_size=15&max_timestamp=%d&vip=1&platform=0&appver=0&udid=0"
+
+
+
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+
+
+#endif
